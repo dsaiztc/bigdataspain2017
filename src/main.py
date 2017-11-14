@@ -1,4 +1,5 @@
 from datetime import datetime
+from pytz import timezone
 
 import requests
 from bs4 import BeautifulSoup
@@ -6,6 +7,7 @@ from ics import Calendar, Event
 
 import requests_cache
 
+madrid = timezone('Europe/Madrid')
 requests_cache.install_cache()
 
 
@@ -55,11 +57,11 @@ def get_event_from_url(s, talk_url):
     time_start_str = time_str_split[0]
     time_start_str = time_start_str if len(time_start_str) == 5 else '0' + time_start_str
     start_date_str = '2017-11-' + date_str[-4:-2].strip() + time_start_str
-    start_date = datetime.strptime(start_date_str, '%Y-%m-%d%H:%M')
+    start_date = madrid.localize(datetime.strptime(start_date_str, '%Y-%m-%d%H:%M'))
     time_end_str = time_str_split[1]
     time_end_str = time_end_str if len(time_end_str) == 5 else '0' + time_end_str
     end_date_str = '2017-11-' + date_str[-4:-2].strip() + time_end_str
-    end_date = datetime.strptime(end_date_str, '%Y-%m-%d%H:%M')
+    end_date = madrid.localize(datetime.strptime(end_date_str, '%Y-%m-%d%H:%M'))
 
     single_field_data_list = event_container.select('.single-field-data')
     summary = ''
