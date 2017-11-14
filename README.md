@@ -1,9 +1,9 @@
-# pycon2016
+# BigDataSpain2017
 
-Having a difficult time deciding which talks to go on [PyCon 2016 Ireland](http://python.ie/pycon-2016/schedule/)?
+Having a difficult time deciding which talks to go on [BigData Spain 2017](https://www.bigdataspain.org/2017/schedule)?
 
-Download the iCalendar file [pycon2016.ics](https://raw.githubusercontent.com/dsaiztc/pycon2016/master/pycon2016.ics) and import it to your favorite Calendar application ([Google Calendar](https://calendar.google.com), [MS Outlook](https://calendar.live.com), [Mozilla Thunderbird](https://www.mozilla.org/thunderbird/), etc.)
+Download the iCalendar file [bigdataspain.ics](https://raw.githubusercontent.com/dsaiztc/bigdataspain2017/master/bigdataspain.ics) and import it to your favorite Calendar application ([Google Calendar](https://calendar.google.com), [MS Outlook](https://calendar.live.com), [Mozilla Thunderbird](https://www.mozilla.org/thunderbird/), etc.)
 
-If you want the most *up-to-date* version then you should create it by yourself, simply download the code and run the `main.py` script, that'll create a **pycon2016.ics** file that you can import to your Calendar application.
+If you want the most *up-to-date* version then you should create it by yourself, simply download the code and run the `main.py` script, that'll create a **bigdataspain.ics** file that you can import to your Calendar application.
 
 Enjoy!
